@@ -1,0 +1,89 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+body{
+	/*background-color: black;*/
+    background-image:  url('Images/v.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	padding: 10px 20px;
+}
+.container{
+	font-family: Helvetica, sans-serif;
+	background-color: black;
+	/*background: rgba(255,255,255,0.25);*/
+	opacity: 90%;
+	width: 300px;
+	height: 350px;
+	margin: 120px 520px;
+	box-shadow: 0 8px 32px 0 rgba(31,38,135,0.37);
+	border-radius: 10px;
+	backdrop-filter: blur(0.3px);
+	-webkit-backdrop-filter: blur(0.3px);
+	border: 1px solid rgba(255,255,255,0.18);
+}
+h2{
+	text-align: center;
+	color: white;
+	margin-top: 30px;
+}
+form{
+	margin: 30px;
+}
+label{
+	display: block;
+	color: white;
+	margin-top: 15px;
+	margin-bottom:10px;
+}
+input{
+	display: block;
+	width: 80%;
+	background: transparent;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid white;
+	padding: 10px;
+	color: white;
+}
+::placeholder{
+	color: white;
+	opacity: 0.4;
+}
+button{
+	border-radius: 5px;
+	background: blueviolet;
+	width: 90%;
+	border: none;
+	outline: none;
+	padding: 12px;
+	color: white;
+	font-size: 17px;
+	margin-top: 30px;
+	cursor: pointer;
+	transition: 0.2s;
+}
+.form  .button span{
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+.form  .button.span:after{
+	content:'\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -15px;
+	transform: 0.5s;
+}
+.form  .button:hover span{
+	padding-right: 25px;
+}
+.form  .button:hover .span:after{
+	opacity: 1;
+	right: 0;
+}
